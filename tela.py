@@ -12,6 +12,8 @@ import tkinter.messagebox as tkmsg
 
 global localizacao_arquivo
 
+
+
 #import tela_support
 
 def init(top, gui, *args, **kwargs):
@@ -237,7 +239,6 @@ class TelaPrincipal:
         self.txtnomearquivo.configure(foreground="#000000")
         self.txtnomearquivo.configure(insertbackground="black")
         
-
         self.btnsubmeter = tk.Button(self.Tela1)
         self.btnsubmeter.place(relx=0.822, rely=0.470, height=30, width=95)
         self.btnsubmeter.configure(activebackground="#ececec")
@@ -250,7 +251,6 @@ class TelaPrincipal:
         self.btnsubmeter.configure(pady="0")
         self.btnsubmeter.configure(text='''Submeter''')
         self.btnsubmeter.configure(command = self.submeter)
-
 
         self.bntfechar = tk.Button(self.Tela1)
         self.bntfechar.place(relx=0.843, rely=0.946, height=24, width=86)
@@ -265,8 +265,7 @@ class TelaPrincipal:
         self.bntfechar.configure(text='''Fechar''')
         self.bntfechar.configure(command = self.fechar_janela)
 
- 
-        self.areatexto = tk.Text(top)
+        self.areatexto = tk.Text(top,wrap=NONE)
         self.areatexto.place(relx=0.033, rely=0.533, relheight=0.375, relwidth=0.938)
         self.areatexto.configure(background="white")
         self.areatexto.configure(font="TkTextFont")
@@ -278,7 +277,10 @@ class TelaPrincipal:
         self.areatexto.configure(selectforeground="black")
         self.areatexto.configure(wrap="word")
         self.areatexto.config(state="disabled")
-  
+
+        #self.vscroll = Scrollbar( self.areatexto, orient=VERTICAL, command=self.areatexto.yview)
+        #self.areatexto['yscroll'] = self.vscroll.set
+        #self.vscroll.pack(side="right", fill="y")
 
 if __name__ == '__main__':
     vp_start_gui()
