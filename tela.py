@@ -1,3 +1,7 @@
+#! /usr/bin/env python
+#  -*- coding: utf-8 -*-
+#    Mar 07, 2020 03:04:43 PM -03  platform: Windows NT
+
 import sys
 import tkinter as tk
 from tkinter import filedialog
