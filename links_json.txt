@@ -1,0 +1,6 @@
+https://python-guide-pt-br.readthedocs.io/pt_BR/latest/scenarios/json.html
+https://www.programiz.com/python-programming/json
+https://www.w3schools.com/python/python_json.asp
+https://www.tutorialspoint.com/How-to-convert-string-to-JSON-using-Python
+https://www.journaldev.com/33302/python-pretty-print-json
+https://pythonspot.com/json-encoding-and-decoding-with-python/
